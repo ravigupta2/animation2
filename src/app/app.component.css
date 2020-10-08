@@ -1,0 +1,56 @@
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.heading {
+  font-family: 'Chilanka', cursive;
+  text-align: center;
+}
+.border{ border: 1px solid grey}
+.dropdownDiv{
+  width: 10%;
+  margin: 20px;
+}
+.dropdown{}
+.dropdown ul li {list-style: none}
+.dropdown ul { padding-left: 0; margin-top: 0;}
+.glow{
+  padding: 0;
+  display: flex;
+}
+a { text-decoration: none}
+.glow li { list-style: none;margin: 0 15px;}
+.glow li a{    position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;}
+.glow li a:hover {
+  /*color: #ffa502;*/
+  box-shadow: 0 0 20px #d35400;
+  /*text-shadow: 0 0 15px #d35400;*/
+}
+.glow li a:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+  filter: blur(3px);
+}
+.glow li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #d35400;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}

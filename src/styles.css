@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+.width75 { width: 75%; margin: 0 auto;}
+.m4 { margin: 20px}
+.p4 { padding: 12px}
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(255,255,255,0.25), -5px -5px 30px 7px rgba(255,255,255,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 255, 0,0.25),
+  -5px -5px 30px 15px rgba(0, 255, 0,0.25);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+.dark { background: #121212}
+ main{
+   position: relative;
+ }
+.overFlow { overflow: hidden}
+.center { text-align: center}
+.number{ min-height: 30px; height: auto; width: 20%;    font-size: 20px;
+  line-height: 30px;margin: 7px auto; position: relative;box-shadow:1px 1px 10px #ccc; }
+.delete { display: none; color: #ea2525; position: absolute; font-size: 13px;    top: -8px;
+  right: 5px; cursor: pointer; font-family: 'Chilanka', cursive}
+.number:hover .delete { display: block}
+.button {
+  color : white ; background: #76efff; border: none; user-focus: none; height: 25px;
+}
+.input {
+  height: 23px; border: none;box-shadow:1px 1px 10px #ccc;
+}
+.button:focus , .input:focus {
+ outline: none;
+}
